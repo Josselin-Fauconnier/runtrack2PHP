@@ -1,18 +1,23 @@
 
 <?php
-function est_premier($nombre_premier) {
-    if ($nombre_premier <= 1) {
+function est_premier($nombre) {
+    if ($nombre <= 1) {
         return false;
     }
-    
-    for ($i = 2; $i <= sqrt($nombre_premier); $i++) {
-        if ($nombre_premier % $i == 0) {
+
+    $racine = sqrt($nombre);
+    for ($i = 2; $i <= $racine; $i++) {
+        if ($nombre % $i == 0) {
             return false;
         }
     }
-    
+
     return true;
 }
 
-
+for ($i = 1; $i <= 1000; $i++) {
+    if (est_premier($i)) {
+        echo $i . "<br />";
+    }
+}
 ?>
