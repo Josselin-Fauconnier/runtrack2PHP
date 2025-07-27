@@ -15,8 +15,6 @@ if (!empty($_GET['nombre'])) {
         } else {
             echo "Nombre impair";
         }
-    } else {
-        echo "Veuillez entrer un nombre valide.";
     }
 }
 ?>
