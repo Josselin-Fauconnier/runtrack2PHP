@@ -1,1 +1,15 @@
 
+body {
+    background-color: #fff3e0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #b51d9c;
+}
+
+form {
+    padding: 20px;
+    border-style: 2px solid #e1773e dashed double none;
+    width: 300px;
+    margin: 50px auto;
+    background-color: #696764;
+    border-radius: 10px, 45px,;
+}
