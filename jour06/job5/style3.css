@@ -1,1 +1,16 @@
 
+body {
+    background-color: #f3e5f5;
+    font-family: 'Georgia', serif;
+    color: #6a1b9a;
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #6a1b9a;
+    width: 300px;
+    margin: 50px auto;
+    background-color: #ce93d8;
+    border-radius: 90px,35px;
+    text-shadow: #20cb31;
+}
