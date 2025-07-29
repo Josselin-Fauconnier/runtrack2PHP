@@ -6,11 +6,11 @@ echo '<form method="GET" action="">
   <input type="submit" >
 </form>';
 if (!empty($_GET)) {
-    $largeur = (int)$_GET['largeur'];
-    $hauteur = (int)$_GET['hauteur'];
+    $largeur = $_GET['largeur'];
+    $hauteur = $_GET['hauteur'];
 
     if ($largeur >= 2 && $hauteur > 0) {
-        $toit = (int)($largeur / 2);
+        $toit = ($largeur / 2);
         echo '<pre>';
         for ($i = 0; $i < $toit; $i++) {
             echo str_repeat(' ', $toit - $i);
