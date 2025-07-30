@@ -11,13 +11,13 @@ if (!empty($_GET)) {
     $hauteur = $_GET['hauteur'];
 
     if ($largeur >= 2 && $hauteur > 0) {
-        echo '<pre>'; // Ajout de la balise pre pour le formatage
+        echo '<pre>'; 
         $toit = floor($largeur / 2); 
         for ($i = 0; $i < $toit; $i++) {
             echo str_repeat(' ', $toit - $i);
             echo '/';
             echo str_repeat(' ', 2 * $i);
-            echo "\\\n"; // Un seul backslash suffit ici
+            echo "\\\n"; 
         }
         echo '/'.str_repeat('_', $largeur)."\\\n";
         for ($j = 0; $j < $hauteur; $j++) {
