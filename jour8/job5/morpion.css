@@ -1,1 +1,13 @@
 
+table,tr,td{
+    border: 1px solid purple;
+}
+
+
+ .x{
+    color: red;
+ }
+
+.o{
+    color: rgb(26, 220, 88);
+}
