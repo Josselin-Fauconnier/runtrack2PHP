@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -90,23 +89,25 @@ if (isset($_POST['reset'])) {
     <table>
     <?php for ($i = 0; $i < 3; $i++): ?>
         <tr>
-        <?php for ($j = 0; $j < 3; $j++): ?>
-        <td>
+         <?php for ($j = 0; $j < 3; $j++): ?>
+    <td>
         <?php if ($_SESSION['grille'][$i][$j] === '-'): ?>
-        <button type="submit" name="ligne" value="<?= $i ?>">
-        <input type="hidden" name="col" value="<?= $j ?>">
-                                -
-        </button>
-     <?php else:
-                    $val = $_SESSION['grille'][$i][$j];
-                     $class = $val === 'X' ? 'x' : 'o';
-                    echo "<span class='$class'>$val</span>";
+            <form method="post" style="display:inline;">
+                            <input type="hidden" name="ligne" value="<?= $i ?>">
+                            <input type="hidden" name="col" value="<?= $j ?>">
+                            <button type="submit">-</button>
+            </form>
+             <?php else:
+                        $val = $_SESSION['grille'][$i][$j];
+                        $class = $val === 'X' ? 'x' : 'o';
+                        echo "<span class='$class'>$val</span>";
                     endif; ?>
-                </td>
-     <?php endfor; ?>
-         </tr>
+            </td>
+            <?php endfor; ?>
+        </tr>
     <?php endfor; ?>
 </table>
+
 </form>
 
 <form method="post">
@@ -115,3 +116,4 @@ if (isset($_POST['reset'])) {
 
 </body>
 </html>
+
