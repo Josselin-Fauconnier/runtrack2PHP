@@ -1,0 +1,1 @@
+SELECT champs FROM salles 
