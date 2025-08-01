@@ -1,1 +1,1 @@
-SELECT champs FROM salles 
+SELECT champs FROM salles;
