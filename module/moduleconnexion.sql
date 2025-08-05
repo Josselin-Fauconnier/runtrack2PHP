@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 04 août 2025 à 10:22
+-- Généré le : mar. 05 août 2025 à 11:41
 -- Version du serveur : 5.7.24
 -- Version de PHP : 8.3.1
 
@@ -32,14 +32,14 @@ CREATE TABLE `utilisateurs` (
   `login` varchar(255) NOT NULL,
   `prenom` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
-  `passeword` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`id`, `login`, `prenom`, `nom`, `passeword`) VALUES
+INSERT INTO `utilisateurs` (`id`, `login`, `prenom`, `nom`, `password`) VALUES
 (1, 'admin', 'admin', 'admin', 'admin');
 
 --
@@ -66,4 +66,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
